@@ -1,56 +1,64 @@
 // .......................................
-// ..............Variable..................
+// .....Arithmetic Operators..............
 // .......................................
 
-// --Primitive Data Types--
-/*  Number - Floating Point Numbers, for decimals and Integers.
-    String - Sequence of charecters, used for text.
-    Boolean - Logical data type that can be true or false.
-    undefiend - Data type of a variable that does not have a value yet.
-    nul - non-existent */
+// -- Single Operators --
 
-// You can only start a veriabe names with a letter, underscore or doller sign.
-// And can't use any reserved keywords as a veriable names.
+var myAge, yourAge, year, result;
+myAge = 29;
+yourAge = 20;
+year = 2023;
 
-// create veriables
-var firstName = "Dhishan";
-var lastName ="Chathuranga";
-var age = 29;
-var isOk = true;
-var job,hight;
+// Substraction
+result = year - myAge;
+console.log("I was born in " + result);
 
-// Print only veriable
-console.log(firstName);
+// Addition
+result = myAge + 10;
+console.log("After 10 yers my age " + result);
 
-// Print the veriables with a String
-console.log("My name is " + firstName + " " + lastName + ".");
+// Multiplication
+result = myAge * yourAge;
+console.log("Multiplication your age and my age " + result);
 
-// Type Coercian (Output print to convert String)
-console.log("I am " + age +" yers old boy.");
+// Division
+console.log("Division of our ages " + (myAge / yourAge));
 
-console.log("It is " + isOk + ".");
+// Modulus
+console.log("Modulus of our ages " + (myAge % yourAge));
 
-console.log("I am a" + job);
+// Exponentiation
+console.log("Exponent of my age " + (myAge**2));
+console.log("Exponent of my age " + (myAge**3));
 
-// Get a veriable type
-console.log(typeof(lastName));
-console.log(typeof(firstName));
-console.log(typeof(age));
-console.log(typeof(isOk));
-console.log(typeof(job));
-console.log(typeof(hight));
 
-// Define
-job = "Software Engineer";
-console.log("I am a " + job + ".");
+//--- Increment--- 
+// Post Increment
+console.log(myAge++);
+console.log("Post Increment my age " + myAge);
 
-// Variable Mutation
-job = "UI UX Engineer"
-console.log("I am a " + job + ".");
+// Pre Increment
+console.log(++myAge);
+console.log("Pre Increment my age " + myAge);
 
-// Display an alert
-alert("your age are "+ age + " years old. And am I right?" );
+//--- Decrement--- 
+// Post Decrement
+console.log(myAge--);
+console.log("Post Decrement my age " + myAge);
 
-// Get user input
-hight = prompt("What is your hight?");
-alert("My hight is " + hight + " Feet.");
+// Pre Decrement
+console.log(--myAge);
+console.log("Pret Decrement my age " + myAge);
+
+//-- Operator Precedence -- 
+var cal = (((1/4)+(1/4))*4)**3;
+console.log(cal);
+
+// Multiple Operators
+var ans1, ans2;
+ans1 = ans2 = (((1/4)+(1/4))*4)**3 + 5;
+console.log(ans1);
+
+
+
+
