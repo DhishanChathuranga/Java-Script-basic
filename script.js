@@ -1,34 +1,33 @@
 // .......................................
-// .....Assignment Operators..............
+// .....BMI Comparision..............
 // .......................................
 
-// Equal
-var myName = "Dhishan";
-console.log(myName);
+// var mass, hight, bmi;
 
-// Addition wuth Equal
-var age = 29;
-age += 10; // age = age + 10;
-console.log(age);
+// mass = prompt("What is your mass ? ");
+// hight = prompt("What is your hight? ");
 
-// Substrcation with Equal
-age -= 10; // age = age - 10;
-console.log(age);
+// bmi = mass/hight**2; 
 
-// Multiplication with Equal
-age *= 10; // age = age * 10;
-console.log(age);
+// console.log("Your BMI is : "+ bmi);
 
-// Division with Equal
-age /= 10; // age = age / 10;
-console.log(age);
+// ...................................................................................
 
-// Mudulus
-age %= 10; // age = age % 10;
-console.log(age);
+var mass, hight, bmiK, bmiN, isKasun;
 
-// Exponentiation with Equal
-age **= 2; // age = age ** 2;
-console.log(age);
+// Kasun's BMI
+mass = prompt("What is Kasun's mass :");
+hight = prompt("What is Kasun's hight :");
+bmiK = mass/hight**2;
 
+// Nimal's BMI
+mass = prompt("What is Nimal's mass :");
+hight = prompt("What is Nimal's hight :");
+bmiN = mass/hight**2;
 
+// Display Borth BMIs
+alert("Kasun BMI: " + bmiK + ". Nimals BMI: "+ bmiN + ".");
+
+// comperisiom
+isKasun = bmiK > bmiN;
+alert("Kasun's BMI greater then Nimal's Bmi. It is " + isKasun + ".");
