@@ -1,33 +1,16 @@
 // .......................................
-// .....BMI Comparision..............
+// ...............If Else..............
 // .......................................
 
-// var mass, hight, bmi;
+var a = 30;
+var b = 40;
 
-// mass = prompt("What is your mass ? ");
-// hight = prompt("What is your hight? ");
-
-// bmi = mass/hight**2; 
-
-// console.log("Your BMI is : "+ bmi);
-
-// ...................................................................................
-
-var mass, hight, bmiK, bmiN, isKasun;
-
-// Kasun's BMI
-mass = prompt("What is Kasun's mass :");
-hight = prompt("What is Kasun's hight :");
-bmiK = mass/hight**2;
-
-// Nimal's BMI
-mass = prompt("What is Nimal's mass :");
-hight = prompt("What is Nimal's hight :");
-bmiN = mass/hight**2;
-
-// Display Borth BMIs
-alert("Kasun BMI: " + bmiK + ". Nimals BMI: "+ bmiN + ".");
-
-// comperisiom
-isKasun = bmiK > bmiN;
-alert("Kasun's BMI greater then Nimal's Bmi. It is " + isKasun + ".");
+if(a > b){
+    console.log("a is greater then b")
+}
+else if(a < b){
+    console.log("a is less then b")
+}
+else (a == b){
+    console.log("a is equal b")
+}
