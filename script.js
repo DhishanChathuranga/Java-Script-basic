@@ -1,27 +1,39 @@
 // .......................................
-// ..........Logical Operators............
+// ..............Switch Case..............
 // .......................................
 
-var a = 20;
-var b = 10;
-var c = 5;
+var empName = 'Dhishan';
+var jobRole = 'Professor';
 
-// And
-if(a == 10 && a == b){
-    console.log("It is good!");
+switch(jobRole.toLocaleLowerCase()){
+    case 'teacher' :
+        console.log(empName + " is a teacher.");
+        break;
+    case 'doctor' :
+        console.log(empName + " is a " + jobRole);
+        break;
+    case 'professor':
+    case 'software engineering' :
+        console.log(empName + " is a " + jobRole);
+        break;
+    default:
+        console.log(empName + " is something else.");
+        break;
 }
 
-// or
-else if (a < 10 || c > b){
-    console.log("It is ok!");
+// ---------------------------------------------------------------------
+var age = 25;
+
+switch(true){
+    case age < 20 :
+        console.log(empName + ' is under age.');
+        break;
+    case 20 < age < 30  :
+        console.log(empName + ' is young age.');
+        break;
+    case 30 < age < 40 :
+        console.log(empName + ' is middle age.');
+        break;
+    default:
+        console.log(empName + ' is too old.');
 }
-
-// not
-else if(a != c){
-    console.log("It is normal!");
-} 
-
-else{
-    console.log("It is bad!");
-}
-
